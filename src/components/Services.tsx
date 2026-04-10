@@ -1,12 +1,4 @@
-import { FileText, Monitor, Search, Cpu, Wrench, Users, GraduationCap, Handshake } from "lucide-react";
-
-const services = [
-  { icon: FileText, title: "Educational Content Digitization", desc: "Transforming textbooks and learning materials into accessible formats, including complex mathematical expressions, scientific notation, and diagrams." },
-  { icon: Monitor, title: "Content Remediation", desc: "Converting digital and print content into formats meeting accessibility standards — transcription, captioning, audio description, sign language, Braille, and tactile formats." },
-  { icon: Cpu, title: "Research & Innovation", desc: "Advancing accessible communication through AI and emerging technologies for complex STEM content accessibility." },
-  { icon: Wrench, title: "Assistive Technology Development", desc: "Designing and deploying tools and software systems for accessible content conversion, diagram accessibility, and mathematical notation." },
-  { icon: Users, title: "User Research", desc: "Conducting needs assessments involving persons with disabilities to improve tools, workflows, and standards for accessible digitization." },
-];
+import { services } from "../constants";
 
 const Services = () => (
   <section id="services" aria-labelledby="services-heading" className="py-16 sm:py-20 md:py-28 bg-background relative">

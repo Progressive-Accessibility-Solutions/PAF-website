@@ -1,8 +1,8 @@
 import { Eye, BookOpen, Globe } from "lucide-react";
 
 const pillars = [
-  { icon: Eye, title: "Accessibility Research", desc: "Pioneering research in accessible communication technologies and inclusive media solutions." },
   { icon: BookOpen, title: "Content Digitization", desc: "Large-scale conversion of educational materials into accessible formats for all learners." },
+  { icon: Eye, title: "Accessibility Research", desc: "Pioneering research in accessible communication technologies and inclusive media solutions." },
   { icon: Globe, title: "Global Standards", desc: "Aligned with international accessibility standards to ensure universal compatibility." },
 ];
 

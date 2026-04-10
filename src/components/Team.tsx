@@ -7,7 +7,7 @@ const members = [
     {
       name: "Neha Jadhav",
       role: "Director",
-      bio: "Director of Progressive Accessibility Foundation, Neha works extensively on digitizing academic textbooks with a focus on making complex STEM subjects fully accessible. Her work includes transforming printed books into screen-reader-compatible formats, converting mathematical expressions into semantic LaTeX with MathJax, and developing accessible diagrams using structured SVG and assistive-technology-friendly design methods.",
+      bio: "Neha works extensively on digitizing academic textbooks with a focus on making complex STEM subjects fully accessible. Her work includes transforming printed books into screen-reader-compatible formats, converting mathematical expressions into semantic LaTeX with MathJax, and developing accessible diagrams using structured SVG and assistive-technology-friendly design methods.",
     },
   ];
   

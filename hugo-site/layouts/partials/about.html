@@ -1,0 +1,24 @@
+<section id="about" aria-labelledby="about-heading" class="section section--pattern">
+  <div class="container">
+    <div class="section__header">
+      <h2 id="about-heading" class="section__title">About the Foundation</h2>
+      <p class="section__lead">
+        Progressive Accessibility Foundation is a Section 8 organization committed to advancing inclusive digital
+        experiences for persons with disabilities. We focus on accessibility research, large-scale digitization of
+        educational content, training, and development of accessible digital resources.
+      </p>
+    </div>
+
+    <div class="card-grid card-grid--3">
+      {{ range site.Data.about.pillars }}
+      <article class="card card--centered">
+        <div class="card__icon" aria-hidden="true">
+          {{ partial "icon.html" .icon }}
+        </div>
+        <h3 class="card__title">{{ .title }}</h3>
+        <p class="card__desc">{{ .desc }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>

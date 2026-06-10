@@ -1,0 +1,29 @@
+<section id="team" aria-labelledby="team-heading" class="section section--pattern">
+  <div class="container">
+    <div class="section__header">
+      <h2 id="team-heading" class="section__title">Our Team</h2>
+      <p class="section__lead">
+        Led by experts at the forefront of accessibility research and innovation.
+      </p>
+    </div>
+
+    <div class="card-grid card-grid--2">
+      {{ range site.Data.team.members }}
+      <article class="card card--team">
+        <div class="card__avatar" aria-hidden="true">
+          <span aria-hidden="true">
+            {{/* Initials: first letter of first two words */}}
+            {{ $parts := split .name " " }}
+            {{ $i0 := index $parts 0 }}
+            {{ $i1 := index $parts 1 }}
+            {{ printf "%s%s" (substr $i0 0 1) (substr $i1 0 1) }}
+          </span>
+        </div>
+        <h3 class="card__name">{{ .name }}</h3>
+        <p class="card__role">{{ .role }}</p>
+        <p class="card__desc">{{ .bio }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,43 @@
+<nav aria-label="Main navigation" class="navbar">
+  <div class="navbar__inner">
+    <a href="#" class="navbar__brand">
+      <img src="/images/mini-logo.svg" alt="Progressive Accessibility Foundation logo" class="navbar__logo" />
+      <span class="navbar__name">Progressive Access</span>
+    </a>
+
+    <ul class="navbar__links" role="list">
+      <li role="listitem"><a href="#services">Services</a></li>
+      <li role="listitem"><a href="#about">About</a></li>
+      <li role="listitem"><a href="#team">Team</a></li>
+      <li role="listitem"><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button
+      class="navbar__hamburger"
+      id="menu-toggle"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" aria-hidden="true" class="icon-menu">
+        <line x1="4" x2="20" y1="12" y2="12"/>
+        <line x1="4" x2="20" y1="6" y2="6"/>
+        <line x1="4" x2="20" y1="18" y2="18"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" aria-hidden="true" class="icon-close" style="display:none">
+        <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="mobile-nav" class="navbar__mobile" aria-label="Mobile navigation" hidden>
+    <a href="#services" class="navbar__mobile-link">Services</a>
+    <a href="#about" class="navbar__mobile-link">About</a>
+    <a href="#team" class="navbar__mobile-link">Team</a>
+    <a href="#contact" class="navbar__mobile-link">Contact</a>
+  </div>
+</nav>

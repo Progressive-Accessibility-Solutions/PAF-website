@@ -1,0 +1,22 @@
+<section id="news" aria-labelledby="news-heading" class="section">
+  <div class="container container--wide">
+    <div class="section__header">
+      <h2 id="news-heading" class="section__title">Latest News</h2>
+      <p class="section__lead">
+        Updates from the Foundation on research, partnerships, and publications.
+      </p>
+    </div>
+
+    <div class="card-grid card-grid--3">
+      {{ range site.Data.news.items }}
+      <article class="card card--news">
+        <time class="news__date" datetime="{{ .date }}">
+          {{ dateFormat "January 2, 2006" .date }}
+        </time>
+        <h3 class="card__title">{{ .title }}</h3>
+        <p class="card__desc">{{ .desc }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>

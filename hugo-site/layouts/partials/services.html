@@ -1,0 +1,25 @@
+<section id="services" aria-labelledby="services-heading" class="section">
+  <div class="container container--wide">
+    <div class="section__header">
+      <h2 id="services-heading" class="section__title">What We Do</h2>
+      <p class="section__lead">
+        Comprehensive accessibility services spanning research, technology, and education.
+      </p>
+    </div>
+
+    <div class="card-grid card-grid--3" role="list">
+      {{ range site.Data.services.items }}
+      <article class="card card--centered card--service" role="listitem">
+        <div class="card__icon" aria-hidden="true">
+          {{ partial "icon.html" .icon }}
+        </div>
+        <h3 class="card__title">{{ .title }}</h3>
+        <p class="card__desc">{{ .desc }}</p>
+        <a href="#contact" class="btn btn--primary btn--sm">
+          {{ index (split .title " ") 0 }}
+        </a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>

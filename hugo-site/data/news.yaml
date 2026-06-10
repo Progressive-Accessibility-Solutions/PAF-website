@@ -1,0 +1,10 @@
+items:
+  - title: "PAF Launches Large-Scale STEM Textbook Digitization Initiative"
+    date: "2026-03-15"
+    desc: "The Foundation has begun converting over 200 undergraduate STEM textbooks into fully accessible formats, including semantic LaTeX for mathematical content and structured SVG for scientific diagrams."
+  - title: "New Partnership with University of Birmingham"
+    date: "2026-02-08"
+    desc: "PAF has formalized a research collaboration with the University of Birmingham's Document Analysis & Accessibility group to advance tools for automated accessibility conversion."
+  - title: "Accessible Diagram Guidelines Published"
+    date: "2026-01-20"
+    desc: "PAF has released an open-access guide on creating assistive-technology-friendly SVG diagrams for educational publishers, now available to the wider accessibility community."
